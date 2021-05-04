@@ -29,3 +29,20 @@ e imprimir en pantalla de la mayor a la menor
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+print("Ingrese una palabra")
+palabra_1 = str(input())
+print("Ingrese una segunda palabra")
+palabra_2 = str(input())
+print("Ingrese una tercer palabra")
+palabra_3 = str(input())
+
+print("Una vez ingresadas las 3 palabras: ¿Cómo quieres ordenarlas?\n Ingresa la opción 1 ó la opción 2: \n 1 - Ordenar por orden alfabético \n 2 - Ordenar por cantidad de letras")
+opción= int(input())
+palabras = [palabra_1, palabra_2, palabra_3]
+palabras_alfabeto= sorted(palabras)
+palabras_letras=sorted(palabras, key=len, reverse=True)
+if opción == 1:
+    print(palabras_alfabeto)
+else:
+ print(palabras_letras)

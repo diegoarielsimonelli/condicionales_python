@@ -26,3 +26,28 @@ En cada caso imprimir en pantalla el resultado
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+print("Ingrese el primer valor de temperatura")
+temperatura_1 = float(input())
+print("Ingrese el segundo valor de temperatura")
+temperatura_2 = float(input())
+print("Ingrese el tercer valor de temperatura")
+temperatura_3 = float(input())
+
+promedio= (temperatura_1 + temperatura_2 + temperatura_3)/3
+
+if temperatura_1 > temperatura_2 and temperatura_1 > temperatura_3:
+    print("la temperatura mayor es", temperatura_1)
+elif  temperatura_2 > temperatura_1 and temperatura_2 > temperatura_3:
+    print("la temperatura mayor es", temperatura_2)
+elif  temperatura_3 > temperatura_1 and temperatura_3 > temperatura_2:
+    print("la temperatura mayor es", temperatura_3)
+
+if temperatura_1 < temperatura_2 and temperatura_1 < temperatura_3:
+    print ("la menor temperatura es", temperatura_1)
+elif temperatura_2 < temperatura_1 and temperatura_2 < temperatura_3:
+    print ("la menor temperatura es", temperatura_2)
+elif temperatura_3 < temperatura_1 and temperatura_3 < temperatura_2:
+    print ("la menor temperatura es", temperatura_3)
+
+print("el promedio es", promedio)
